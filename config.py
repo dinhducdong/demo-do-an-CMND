@@ -10,7 +10,7 @@ class Config(object):
     CSRF_ENABLED = True
     SECRET_KEY = b"\xa6x\xf1$c\xddZ\xb8\xf8\x87u\x91\x7f\x0c\xcds'\x9e\xac\xb7\xb6\xc3\x9b\x10"
 
-    AUTHY_API_KEY = 'YRcd6vIBKQzykL4XXg9dmPP9QaQCB16K'
+    AUTHY_API_KEY = ''
 
     SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:12345@localhost/ekyc_db'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
