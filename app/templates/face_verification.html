@@ -1,0 +1,42 @@
+{% extends "ekyc.html" %}
+{% block main %}
+<div class="container">
+    <div class="stepwizard">
+    <div class="stepwizard-row setup-panel">
+        <div class="stepwizard-step">
+
+            <!-- add disabled afterwards -->
+
+            <a href="" type="button" class="btn btn-default btn-circle disabled bg-primary text-light">1</a>
+            <p class="step_">Step 1</p>
+        </div>
+        <div class="stepwizard-step">
+            <a href="" type="button" class="btn btn-default btn-circle disabled bg-primary text-light">2</a>
+            <p class="step_">Step 2</p>
+        </div>
+        <div class="stepwizard-step">
+            <a href="" type="button" class="btn btn-default btn-circle disabled bg-primary text-light">3</a>
+            <p class="step_">Step 3</p>
+        </div>
+
+        <div class="stepwizard-step">
+            <a href="" type="button" class="btn btn-primary btn-circle">4</a>
+            <p class="step_">Step 4</p>
+        </div>
+
+    </div>
+
+</div>
+</div>
+    <form action="" method="post" enctype = "multipart/form-data">
+        <input type = "file" name = "pic" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Check</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+    {% endblock %}

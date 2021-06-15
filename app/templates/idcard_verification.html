@@ -1,0 +1,62 @@
+{% extends 'ekyc.html' %}
+{% block main %}
+     <div class="stepwizard">
+            <div class="stepwizard-row setup-panel">
+              <div class="stepwizard-step">
+
+            <!-- add disabled afterwards -->
+
+            <a href="" type="button" class="btn btn-default btn-circle disabled bg-primary text-light">1</a>
+            <p class="step">Step 1</p>
+        </div>
+        <div class="stepwizard-step">
+            <a href="" type="button" class="btn btn-default btn-circle disabled bg-primary text-light">2</a>
+            <p class="step">Step 2</p>
+        </div>
+        <div class="stepwizard-step">
+            <a href="" type="button" class="btn btn-primary btn-circle">3</a>
+            <p class="step">Step 3</p>
+        </div>
+
+        <div class="stepwizard-step">
+            <a href="" type="button" class="btn btn-default btn-circle disabled bg-light ">4</a>
+            <p class="step">Step 4</p>
+        </div>
+
+
+
+    </div>
+</div>
+
+<form method="post" action="/step3/idcard_verification" enctype="multipart/form-data">
+<div class="row setup-content col-md-12 offset-md-12  justify-content-center align-items-center" id="step-3">
+        <div class="col-md-12 justify-content-center align-items-center">
+    <input type="file" name="image">
+<button id="submit" type="submit">Upload</button>
+        </div>
+
+	<div class="container">
+                <div class="raw">
+
+                    <div class="col">
+
+                    <div class="">
+                        Số CMND:<input class="form-control" type="text" value="{{ id }}" >
+                        Họ và tên:<input class="form-control" type="text" value="{{ full_name }}" >
+                        Ngày sinh:<input class="form-control" type="text" value="{{ date_of_birth }}" >
+                        Nguyên quán:<input class="form-control" type="text" value="{{ que_quan }}" >
+
+            </div>
+            </div>
+</div>
+
+            </div>
+
+
+</div>
+</form>
+<div class="button">
+                    <a href="{{ url_for("users.face_verification") }}" type="submit" id="submit"> Next Step </a>
+    </div>
+
+{% endblock %}

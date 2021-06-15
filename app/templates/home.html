@@ -1,0 +1,25 @@
+{% extends "_base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<div class="container-fluid">
+	<div class="row">
+        <div class="col col-md-4 col-xs-12" id="imgBox" style="padding-left:30px;">
+       		<img src="{{ url_for('static', filename='images/kyc.png') }}" alt="kyc" id="kyc" width="90%">
+        </div>
+        <div class="col col-md-8 col-xs-12 px-5" id="contBox">
+        	<div class="col-xs-12" id="mainHeading">
+        		<h3><span id="why"></span> Xác minh eKYC của bạn ngay bây giờ </h3>
+        	</div>
+        	<div class="col-xs-12" id="para">
+                <p><span id="pts"></span>Tình hình dịch Covid-19 đang diễn biến rất căng thẳng trên toàn cầu nói chung và Việt Nam nói riêng. </p>
+                <p>Thực hiện "5K: Khẩu trang – Khử khuẩn – Khoảng cách – Không tập trung – Khai báo y tế" để giữ an toàn cho Bạn và Chúng ta trước đại dịch COVID-19!</p>
+                <p>Mở tài khoản trực tuyến với công nghệ đột phá, giúp khách hàng mở tài khoản vào bất cứ thời điểm nào, tại bất kỳ đâu, không bị giới hạn bởi không gian và thời gian, không phải đến ngân hàng.</p>
+        	</div>
+        	<div class="col-xs-12" id="buttonBox">
+        		<a class="btn-primary" id="procKyc" href="{{ url_for('users.phone_verification') }}">Tiến hành xác minh eKYC</a>
+        	</div>
+        </div>
+    </div>
+</div>
+{% endblock %}

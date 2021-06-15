@@ -1,0 +1,46 @@
+{% extends "ekyc.html" %}
+{% block main %}
+
+
+    <form role="form" method="post" action="phone_verification" class="my-auto">
+    <div class="stepwizard">
+    <div class="stepwizard-row setup-panel">
+        <div class="stepwizard-step">
+            <a href="" type="button" class="btn btn-primary btn-circle">1</a>
+            <p class="step">Step 1</p>
+        </div>
+        <div class="stepwizard-step">
+            <a href="" type="button" class="btn btn-default btn-circle disabled bg-light">2</a>
+            <p class="step">Step 2</p>
+        </div>
+        <div class="stepwizard-step">
+            <a href="" type="button" class="btn btn-default btn-circle disabled bg-light">3</a>
+            <p class="step">Step 3</p>
+        </div>
+
+        <div class="stepwizard-step">
+            <a href="" type="button" class="btn btn-default btn-circle disabled bg-light">4</a>
+            <p class="step">Step 4</p>
+        </div>
+
+
+    </div>
+</div>
+        <div class="phone-form">
+        <div class="row" id="step-1">
+            <div class="col-md-12">
+                <div class="input-box text-center py-3">
+                    <!-- id=phonebox -->
+                    <h5 >Nhập số điện thoại của bạn</h5>
+                    <input maxlength="10" id="phone" class="form-control" placeholder="Nhập số điện thoại của bạn" type="tel" required aria-required="true" name="phone">
+
+                </div>
+
+                <div class="button">
+                <button type="submit" id="submit" > Xác minh </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+{% endblock %}
