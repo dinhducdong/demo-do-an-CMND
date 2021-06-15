@@ -20,7 +20,7 @@ class Config(object):
     MAIL_USE_SSL = False
     MAIL_USE_TLS = True
     MAIL_USERNAME = 'dongdinhnb@gmail.com'
-    MAIL_PASSWORD = '721117672116720119dinhducdong'
+    MAIL_PASSWORD = ''
     MAIL_DEFAULT_SENDER = '"Dong_Dinh" <dongdinhnb@gmail.com>'
     ADMINS = [
         '"Admin One" <dongdinhnb@gmail.com>',
